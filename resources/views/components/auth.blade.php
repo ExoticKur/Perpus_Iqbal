@@ -13,7 +13,7 @@
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/assets/img/favicon/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="https://themeselection.com/wp-content/uploads/2022/04/hero-Illustration-1-768x710.png" />
 
     <!-- Menu waves for no-customizer fix -->
     <link rel="stylesheet" href="/assets/vendor/libs/node-waves/node-waves.css" />

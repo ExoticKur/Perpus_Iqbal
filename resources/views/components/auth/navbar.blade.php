@@ -94,6 +94,13 @@
                 <div data-i18n="penalties">Denda</div>
             </a>
         </li>
+        
+        <li class="menu-item {{ request()->is('reports') ? 'active' : '' }}">
+            <a href="/reports" class="menu-link">
+                <i class="menu-icon tf-icons mdi mdi-cash"></i>
+                <div data-i18n="reports">Laporan</div>
+            </a>
+        </li>
     @endif
 
 </ul>

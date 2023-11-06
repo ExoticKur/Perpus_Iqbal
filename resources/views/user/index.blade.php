@@ -79,12 +79,13 @@
                                 <td>{{ $user->telp }}</td>
                                 <td>
                                     <div class="d-flex gap-3 align-items-center justify-content-center">
-
                                         @include('user.update')
                                         <form action="{{ route('users.destroy', $user->id) }}" method="post">
                                             @csrf
                                             @method('DELETE')
-                                            <button class="btn btn-outline-danger btn-sm" type="submit">
+                                            <button
+                                                class="btn btn-outline-danger btn-sm"
+                                                type="submit">
                                                 Hapus</button>
                                         </form>
                                         <a class="btn btn-outline-primary btn-sm"
