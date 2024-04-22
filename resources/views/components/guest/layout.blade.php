@@ -93,7 +93,7 @@
             <div class="lc-block d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
                 <div class="col-md-4">
                     <div editable="rich">
-                        <p class="text-muted"> © 2023 Acme, Inc</p>
+                        <p class="text-muted"> © 2024 Akar</p>
                     </div>
                 </div><!-- /lc-block -->
                 <div class="d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto col-md-4">

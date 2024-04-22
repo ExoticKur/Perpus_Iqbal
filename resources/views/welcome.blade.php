@@ -138,11 +138,9 @@
         <div class="row mb-2">
             <div class="col-md-12 text-center">
                 <div class="lc-block">
-                    <span editable="inline" class="small mt-4 d-block">LOREM IPSUM</span>
-                    <h2 editable="inline" class="display-2 mb-0"><b>Our Numbers</b></h2>
-                    <p editable="inline"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus <br>
-                        id
-                        ligula malesuada placerat sit amet quis enim.</p>
+                    <span editable="inline" class="small mt-4 d-block">SMK Swasta</span>
+                    <h2 editable="inline" class="display-2 mb-0"><b>Pelita Raya</b></h2>
+                    <p editable="inline"> Merupakan salah satu sekolah swasta yang ada dikota Jambi.</p>
                 </div><!-- /lc-block -->
             </div>
         </div>
@@ -158,7 +156,7 @@
             <div class="col">
                 <div class="card">
                     <div class="card-body">
-                        <h6 class="card-title">Total User</h6>
+                        <h6 class="card-title">Total Pengguna</h6>
                         <h4 class="card-text fw-bold">{{ $user }}</h4>
                     </div>
                 </div>
@@ -184,7 +182,7 @@
                 <div class="col-xl-11 col-xxl-9 mx-auto">
                     <div class="lc-block mb-4">
                         <div editable="rich">
-                            <p class="text-black-50 fw-bold">JOIN SEKARANG</p>
+                            <p class="text-black-50 fw-bold">GABUNG SEKARANG</p>
                         </div>
                     </div>
                     <div class="lc-block">
@@ -193,8 +191,7 @@
                     </div>
                 </div>
             </div>
-            <div class="lc-block"><a class="btn btn-outline-danger btn-lg" href="/register" role="button">Get
-                    Started</a>
+            <div class="lc-block"><a class="btn btn-outline-danger btn-lg" href="/register" role="button">Daftar Sekarang</a>
             </div>
         </div>
     </div>

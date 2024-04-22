@@ -10,7 +10,7 @@
         <li class="menu-item {{ request()->is(['users', 'confirmation-account']) ? 'active' : '' }}">
             <a href="/users" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons mdi mdi-human"></i>
-                <div data-i18n="Users">Users</div>
+                <div data-i18n="Users">Pengguna</div>
                 <div class="badge bg-danger rounded-pill ms-auto {{ $pending == null ? 'd-none' : '' }}">
                     {{ $pending }}
                 </div>
@@ -18,7 +18,7 @@
             <ul class="menu-sub">
                 <li class="menu-item">
                     <a href="{{ route('users.index') }}" class="menu-link">
-                        <div data-i18n="Data-User">Data User</div>
+                        <div data-i18n="Data-User">Data Pengguna</div>
                     </a>
                 </li>
                 <li class="menu-item">
@@ -42,7 +42,7 @@
         <li class="menu-item {{ request()->is(['users', 'confirmation-account']) ? 'active' : '' }}">
             <a href="/users" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons mdi mdi-human"></i>
-                <div data-i18n="Users">Users</div>
+                <div data-i18n="Users">Pengguna</div>
                 <div class="badge bg-danger rounded-pill ms-auto {{ $pending == null ? 'd-none' : '' }}">
                     {{ $pending }}
                 </div>
@@ -50,7 +50,7 @@
             <ul class="menu-sub">
                 <li class="menu-item">
                     <a href="{{ route('users.index') }}" class="menu-link">
-                        <div data-i18n="Data-User">Data User</div>
+                        <div data-i18n="Data-User">Data Pengguna</div>
                     </a>
                 </li>
                 <li class="menu-item">
