@@ -1,11 +1,11 @@
 <x-auth.layout>
     @include('layouts.table')
-    <x-slot name="title">Categories Book</x-slot>
+    <x-slot name="title">Kategori Buku</x-slot>
     <div class="card mb-3">
-        <div class="row">
+        <div class="row" style="background-color: white">
             <div class="col-12 col-md-6">
-                <div class="card-body">
-                    <h4 class="card-title display-6 mb-4 text-truncate lh-sm">Selamat {{ Auth()->user()->name }}! 🎉</h4>
+                <div class="card-body text-black">
+                    <h4 class="card-title display-6 mb-4 text-truncate lh-sm text-black">Selamat {{ Auth()->user()->name }}! 🎉</h4>
                     <p class="mb-0">Kamu mempunyai {{ $count }} buku yang terdaftar dalam
                         {{ $categories->count() }} kategori buku saat ini.</p>
                 </div>
@@ -16,31 +16,31 @@
             </div>
         </div>
     </div>
-    <div class="card">
+    <div class="card" style="background-color: white">
         <div class="card-header">
             @include('category.store')
         </div>
         <div class="card-body">
-            <div class="table-responsive">
+            <div class="table-responsive text-black">
                 <table id="example" class="display table nowrap" style="width:100%">
                     <thead>
                         <tr>
-                            <th>No.</th>
-                            <th>Kategori</th>
-                            <th>Buku</th>
-                            <th>Action</th>
+                            <th class="text-black">No.</th>
+                            <th class="text-black">Kategori</th>
+                            <th class="text-black">Buku</th>
+                            <th class="text-black">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach ($categories as $no => $category)
                             <tr>
-                                <td>{{ ++$no }}.</td>
-                                <td>{{ $category->name }}</td>
-                                <td>{{ $category->books->count() }} Buku</td>
+                                <td class="text-black">{{ ++$no }}.</td>
+                                <td class="text-black">{{ $category->name }}</td>
+                                <td class="text-black">{{ $category->books->count() }} Buku</td>
                                 <td>
-                                    <div class="d-flex gap-3 align-items-center justify-content-center">
+                                    <div class="d-flex gap-3 align-items-center justify-content-center text-black">
                                         @include('category.update')
-                                        <form action="{{ route('categories.destroy', $category->id) }}" method="post">
+                                        <form action="{{ route('categories.destroy', $category->id) }}" onclick="return confirm('Apakah anda ingin menghapus?');" method="post">
                                             @csrf
                                             @method('DELETE')
                                             <button class="btn btn-outline-danger btn-sm" type="submit">

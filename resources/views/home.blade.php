@@ -1,11 +1,11 @@
 <x-auth.layout>
-    <x-slot name="title">Home</x-slot>
-    <div class="card">
+    <x-slot name="title">Beranda</x-slot>
+    <div class="card" style="background-color: white">
         <div class="row">
             <div class="col-12 col-md-6">
                 <div class="card-body">
-                    <h4 class="card-title display-6 mb-4 text-truncate lh-sm">Hello {{ Auth()->user()->name }}!🎉</h4>
-                    <p class="mb-0">Selamat menjalankan tugas dan semoga harimu menyenangkan.</p>
+                    <h4 class="card-title display-6 mb-4 text-truncate lh-sm text-black">Halo {{ Auth()->user()->name }}!🎉</h4>
+                    <p class="mb-0 text-black">Selamat menjalankan tugas dan semoga harimu menyenangkan.</p>
                 </div>
             </div>
             <div class="col-12 col-md-6 position-relative text-center">

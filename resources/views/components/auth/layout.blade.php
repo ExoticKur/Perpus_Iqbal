@@ -56,9 +56,9 @@
             <!-- Menu -->
 
             <aside id="layout-menu" class="layout-menu menu-vertical menu shadow bg-body">
-                <div class="app-brand demo">
+                <div class="app-brand demo" style="background-color: white">
                     <a href="/home" class="app-brand-link">
-                        <img src="https://themeselection.com/wp-content/uploads/2022/04/hero-Illustration-1-768x710.png"
+                        <img src="\assets\img\favicon\PR.png"
                             width="40px" alt="">
                         <span class="app-brand-text demo menu-text fw-semibold ms-2">Perpustakaan</span>
                     </a>
@@ -86,8 +86,8 @@
                         </a>
                     </div>
 
-                    <div class="navbar-nav-right d-flex align-items-center rounded-3 shadow px-1 py-2"
-                        id="navbar-collapse">
+                    <div class="navbar-nav-right d-flex align-items-center rounded-3 shadow px-1 py-2" style="background-color: white"
+                        id="navbar-collapse" >
 
                         <ul class="navbar-nav flex-row align-items-center ms-auto">
                             <!-- User -->
@@ -122,7 +122,7 @@
                                     <li>
                                         <a class="dropdown-item" href="{{ route('profile', Auth()->user()->slug) }}">
                                             <i class="mdi mdi-account-outline me-1 mdi-20px"></i>
-                                            <span class="align-middle">My Profile</span>
+                                            <span class="align-middle">Profile Saya</span>
                                         </a>
                                     </li>
                                     <li>
@@ -133,7 +133,7 @@
                                             onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">
                                             <i class="mdi mdi-power me-1 mdi-20px"></i>
-                                            <span class="align-middle">Log Out</span>
+                                            <span class="align-middle">Keluar</span>
                                         </a>
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST"
                                             class="d-none">
@@ -163,7 +163,7 @@
                                 </button>
                             </div>
                         @elseif ($errors->any())
-                            <div class="alert alert-danger alert-dismissible mb-3" role="alert">
+                            <div class="alert alert-danger alert-dismissible mb-3" role="alert"  style="background-color: white">
                                 <h4 class="alert-heading d-flex align-items-center"><i
                                         class="mdi mdi-close-circle mdi-24px me-2"></i>Opps :(</h4>
 
@@ -175,7 +175,7 @@
                                 </button>
                             </div>
                         @elseif (session('warning'))
-                            <div class="alert alert-warning alert-dismissible mb-3" role="alert">
+                            <div class="alert alert-warning alert-dismissible mb-3" role="alert"  style="background-color: white">
                                 <h4 class="alert-heading d-flex align-items-center"><i
                                         class="mdi mdi-close-circle mdi-24px me-2"></i>Opps :(</h4>
                                 <hr>
@@ -200,16 +200,10 @@
                                     </script>
                                     , made with <span class="text-danger"><i
                                             class="tf-icons mdi mdi-heart"></i></span> by
-                                    <a href="https://themeselection.com" target="_blank"
-                                        class="footer-link fw-medium">ThemeSelection</a>
+                                    <a target="_blank"
+                                        class="footer-link fw-medium">AKAR</a>
                                 </div>
-                                <div class="d-none d-lg-inline-block">
-                                    <a href="https://demos.themeselection.com/materio-bootstrap-html-admin-template/documentation/"
-                                        target="_blank" class="footer-link me-3">Documentation</a>
-
-                                    <a href="https://github.com/themeselection/materio-bootstrap-html-admin-template-free/issues"
-                                        target="_blank" class="footer-link me-3">Support</a>
-                                </div>
+                                
                             </div>
                         </div>
                     </footer>

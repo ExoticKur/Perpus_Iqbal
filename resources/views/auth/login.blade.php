@@ -4,7 +4,7 @@
         <div class="authentication-wrapper authentication-basic container-p-y">
             <div class="authentication-inner py-4">
                 @if (session('error'))
-                    <div class="alert alert-danger alert-dismissible mb-3" role="alert">
+                    <div class="alert alert-danger alert-dismissible mb-3" role="alert"  style="background-color: white">
                         <h4 class="alert-heading d-flex align-items-center"><i
                                 class="mdi mdi-check-circle-outline mdi-24px me-2"></i>Oopps :(</h4>
                         <hr>
@@ -29,7 +29,7 @@
                     <!-- /Logo -->
 
                     <div class="card-body mt-2">
-                        <h4 class="mb-2">Welcome to Materio! 👋</h4>
+                        <h4 class="mb-2">Selamat Datang 👋</h4>
                         <p class="mb-4">Silakan masuk ke akun Anda dan mulai baca</p>
 
                         <form id="formAuthentication" class="mb-3" method="POST" action="{{ route('login') }}">
@@ -70,18 +70,18 @@
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember"
                                         {{ old('remember') ? 'checked' : '' }} />
-                                    <label class="form-check-label" for="remember-me"> Remember Me </label>
+                                    <label class="form-check-label" for="remember-me"> Ingat saya</label>
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <button class="btn btn-primary d-grid w-100" type="submit">Sign in</button>
+                                <button class="btn btn-primary d-grid w-100" type="submit">Masuk</button>
                             </div>
                         </form>
 
                         <p class="text-center">
-                            <span>New on our platform?</span>
+                            <span>Belum punya akun?</span>
                             <a href="/register">
-                                <span>Create an account</span>
+                                <span>Buat akun</span>
                             </a>
                         </p>
                     </div>

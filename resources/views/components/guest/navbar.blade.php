@@ -4,7 +4,7 @@
 
             <!-- Mobile Logo -->
             <a editable="inline" class="navbar-brand text-white d-lg-none" href="/">
-                <img src="https://themeselection.com/wp-content/uploads/2022/04/hero-Illustration-1-768x710.png"
+                <img src="\assets\img\favicon\PR.png"
                     width="48" height="48" class="align-middle me-1" alt="My Website">
                 Perpustakaan</a>
             <!-- end -->
@@ -12,7 +12,7 @@
             <!-- Desktop Logo -->
             <div class="lc-block position-absolute start-50 translate-middle top-50 d-none d-lg-block">
                 <a editable="inline" class="navbar-brand text-white mx-auto" href="/">
-                    <img src="https://themeselection.com/wp-content/uploads/2022/04/hero-Illustration-1-768x710.png"
+                    <img src="\assets\img\favicon\PR.png"
                         width="48" height="48" class="d-block mx-auto" alt="My Website">
                     Perpustakaan</a>
             </div>
@@ -27,11 +27,11 @@
                 <div lc-helper="shortcode" class="live-shortcode me-auto"> <!--  lc_nav_menu -->
                     <ul id="menu-menu-1" class="navbar-nav me-auto mb-2 mb-md-0 navbar-nav">
                         <li class="menu-item menu-item-type-custom menu-item-object-custom nav-item nav-item-32739"><a
-                                href="/" class="nav-link ">Home</a>
+                                href="/" class="nav-link text-white">Beranda</a>
                         </li>
                         <li
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home nav-item nav-item-32738">
-                            <a href="{{ route('catalog.index') }}" class="nav-link ">Koleksi Buku</a>
+                            <a href="{{ route('catalog.index') }}" class="nav-link text-white">Koleksi Buku</a>
                         </li>
                     </ul> <!-- /lc_nav_menu -->
                 </div>
@@ -42,14 +42,14 @@
                             @if (Auth()->user()->role == 'Anggota')
                                 <li
                                     class="menu-item menu-item-type-taxonomy menu-item-object-post_tag nav-item nav-item-33142">
-                                    <a href="{{ route('catalog.history') }}" class="nav-link ">Transaksi</a>
+                                    <a href="{{ route('catalog.history') }}" class="nav-link text-white">Transaksi</a>
                                 </li>
                                 <li
                                     class="menu-item menu-item-type-taxonomy menu-item-object-post_tag nav-item nav-item-33142">
                                     <a href="{{ route('logout') }}"
                                         onclick="event.preventDefault();
                                               document.getElementById('logout-form').submit();"
-                                        class="nav-link ">Logout</a>
+                                        class="nav-link text-white">Logout</a>
                                 </li>
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                     @csrf
@@ -57,15 +57,15 @@
                             @else
                                 <li
                                     class="menu-item menu-item-type-taxonomy menu-item-object-post_tag nav-item nav-item-33142">
-                                    <a href="/home" class="nav-link ">Dashboard</a>
+                                    <a href="/home" class="nav-link text-white">Dashboard</a>
                                 </li>
                             @endif
                         @else
                             <li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag nav-item nav-item-33142">
-                                <a href="/login" class="nav-link ">Masuk</a>
+                                <a href="/login" class="nav-link text-white">Masuk</a>
                             </li>
                             <li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag nav-item nav-item-33142">
-                                <a href="/register" class="nav-link ">Daftar</a>
+                                <a href="/register" class="nav-link text-white">Daftar</a>
                             </li>
                         @endauth
                     </ul> <!-- /lc_nav_menu -->

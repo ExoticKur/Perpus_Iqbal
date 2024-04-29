@@ -13,7 +13,7 @@
                         </button>
                     </div>
                 @elseif ($errors->any())
-                    <div class="alert alert-danger alert-dismissible mb-3" role="alert">
+                    <div class="alert alert-danger alert-dismissible mb-3" role="alert"  style="background-color: white">
                         <h4 class="alert-heading d-flex align-items-center"><i
                                 class="mdi mdi-close-circle mdi-24px me-2"></i>Opps :(</h4>
 
@@ -40,8 +40,8 @@
                     </div>
                     <!-- /Logo -->
                     <div class="card-body mt-2">
-                        <h4 class="mb-2">Adventure starts here 🚀</h4>
-                        <p class="mb-4">Jadikan manajemen peminjaman buku mu mudah dan menyenangkan! </p>
+                        <h4 class="mb-2">Mulai berpetualang disini 🚀</h4>
+                        <p class="mb-4">Jadikan manajemen peminjaman buku menjadi mudah dan menyenangkan! </p>
 
                         <form id="formAuthentication" class="mb-3" action="{{ route('register') }}" method="POST">
                             @csrf
@@ -179,18 +179,18 @@
                                     <input class="form-check-input" type="checkbox" id="terms-conditions"
                                         name="terms" />
                                     <label class="form-check-label" for="terms-conditions">
-                                        I agree to
-                                        <a href="javascript:void(0);">privacy policy & terms</a>
+                                        Saya setuju untuk
+                                        <a href="javascript:void(0);">kebijakan & ketentuan privasi</a>
                                     </label>
                                 </div>
                             </div>
-                            <button class="btn btn-primary d-grid w-100">Sign up</button>
+                            <button class="btn btn-primary d-grid w-100">Daftar</button>
                         </form>
 
                         <p class="text-center">
-                            <span>Already have an account?</span>
+                            <span>Sudah memiliki akun?</span>
                             <a href="/login">
-                                <span>Sign in instead</span>
+                                <span>Masuk</span>
                             </a>
                         </p>
                     </div>

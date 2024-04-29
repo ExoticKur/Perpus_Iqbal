@@ -4,14 +4,14 @@
             <div class="col-md-7">
                 <div class="lc-block text-uppercase">
 
-                    <p editable="inline" class="mb-0 fw-bold" style="letter-spacing:5px">Website</p>
+                    <p editable="inline" class="mb-0 fw-bold text-white" style="letter-spacing:5px">Website</p>
 
                 </div><!-- /lc-block -->
 
                 <div class="lc-block me-lg-5">
                     <div editable="rich" class="">
-                        <h1 class="fw-bold">Sistem informasi perpustakaan</h1>
-                        <p class="text-muted">Selamat datang di Sistem Informasi Perpustakaan, tempat di mana
+                        <h1 class="fw-bold text-white">Sistem informasi perpustakaan</h1>
+                        <p class="text-white">Selamat datang di Sistem Informasi Perpustakaan, tempat di mana
                             pengetahuan bertemu
                             kenyamanan.
                             Temukan ribuan buku dari berbagai genre yang dapat meningkatkan wawasan dan
@@ -20,7 +20,7 @@
                 </div>
 
                 <div class="lc-block">
-                    <a class="btn btn-outline-primary btn-sm" href="{{ route('catalog.index') }}" role="button">Mulai
+                    <a class="btn btn-outline-primary btn-sm text-white"  style="background-color: #9055FD" href="{{ route('catalog.index') }}" role="button">Mulai
                         Baca</a>
                 </div><!-- /lc-block -->
             </div>
@@ -38,12 +38,12 @@
             <div class="col-md-6">
                 <div class="lc-block mb-4">
                     <div editable="rich">
-                        <h2 class="fw-bold display-5">Jelajahi Ilmu dengan Lebih Mudah dan Efisien</h2>
+                        <h2 class="fw-bold display-5 text-white">Jelajahi Ilmu dengan Lebih Mudah dan Efisien</h2>
                     </div>
                 </div>
                 <div class="lc-block mb-5">
                     <div editable="rich">
-                        <p class="text-muted">Sistem informasi perpustakaan adalah solusi yang tepat untuk Anda yang
+                        <p class="text-white">Sistem informasi perpustakaan adalah solusi yang tepat untuk Anda yang
                             ingin meningkatkan pengelolaan perpustakaan. Sistem yang terintegrasi, akurat, dan mudah
                             digunakan. Dengan sistem ini, Anda dapat:</p>
                     </div>
@@ -61,7 +61,7 @@
                             </svg>
                         </div>
 
-                        <div class="ms-3 align-self-center" editable="rich">
+                        <div class="ms-3 align-self-center text-white" editable="rich">
                             <p>Melakukan peminjaman dan pengembalian buku secara online.</p>
                         </div>
                     </div>
@@ -78,7 +78,7 @@
                             </svg>
                         </div>
 
-                        <div class="ms-3 align-self-center" editable="rich">
+                        <div class="ms-3 align-self-center text-white" editable="rich">
                             <p>Melacak informasi tentang koleksi perpustakaan.</p>
                         </div>
                     </div>
@@ -95,7 +95,7 @@
                             </svg>
                         </div>
 
-                        <div class="ms-3 align-self-center" editable="rich">
+                        <div class="ms-3 align-self-center text-white" editable="rich">
                             <p>Menerbitkan laporan perpustakaan.</p>
                         </div>
                     </div>
@@ -138,34 +138,34 @@
         <div class="row mb-2">
             <div class="col-md-12 text-center">
                 <div class="lc-block">
-                    <span editable="inline" class="small mt-4 d-block">SMK Swasta</span>
-                    <h2 editable="inline" class="display-2 mb-0"><b>Pelita Raya</b></h2>
-                    <p editable="inline"> Merupakan salah satu sekolah swasta yang ada dikota Jambi.</p>
+                    <span editable="inline" class="small mt-4 d-block text-white">SMK Swasta</span>
+                    <h2 editable="inline" class="display-2 mb-0 text-white"><b>Pelita Raya</b></h2>
+                    <p editable="inline" class="text-white"> Merupakan salah satu sekolah swasta yang ada dikota Jambi.</p>
                 </div><!-- /lc-block -->
             </div>
         </div>
         <div class="row text-center">
-            <div class="col">
-                <div class="card">
+            <div class="col" >
+                <div class="card" style="background-color: white">
                     <div class="card-body">
-                        <h6 class="card-title">Total Buku</h6>
-                        <h4 class="card-text fw-bold">{{ $book }}</h4>
+                        <h6 class="card-title text-black">Total Buku</h6>
+                        <h4 class="card-text fw-bold text-black">{{ $book }}</h4>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card">
+                <div class="card" style="background-color: white">
                     <div class="card-body">
-                        <h6 class="card-title">Total Pengguna</h6>
-                        <h4 class="card-text fw-bold">{{ $user }}</h4>
+                        <h6 class="card-title text-black">Total Pengguna</h6>
+                        <h4 class="card-text fw-bold text-black">{{ $user }}</h4>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card">
+                <div class="card" style="background-color: white">
                     <div class="card-body">
-                        <h6 class="card-title">Total Transaksi</h6>
-                        <h4 class="card-text fw-bold">{{ $transaction }}</h4>
+                        <h6 class="card-title text-black">Total Transaksi</h6>
+                        <h4 class="card-text fw-bold text-black">{{ $transaction }}</h4>
                     </div>
                 </div>
             </div>
@@ -175,23 +175,22 @@
 
 
 
-    <div class="container-fluid text-center py-4 py-md-6">
-        <div class="lc-block shadow-none card border-0 text-center rounded p-4 p-lg-6"
-            style="background:url(https://cdn.livecanvas.com/media/backgrounds/fffuelco/bbblurry.svg)  center / cover no-repeat;">
+    <div class="container-fluid text-center py-4 py-md-6" >
+        <div class="lc-block shadow-none card border-0 text-center rounded p-4 p-lg-6" style="background-color: white">
             <div class="row card-body mb-3 mb-lg-4">
                 <div class="col-xl-11 col-xxl-9 mx-auto">
-                    <div class="lc-block mb-4">
+                    {{-- <div class="lc-block mb-4">
                         <div editable="rich">
                             <p class="text-black-50 fw-bold">GABUNG SEKARANG</p>
                         </div>
-                    </div>
+                    </div> --}}
                     <div class="lc-block">
-                        <h3 editable="inline" class="fw-bold display-6">Daftarkan diri Anda sekarang dan buka pintu
+                        <h3 editable="inline" class="fw-bold display-6 text-black">Daftarkan diri Anda sekarang dan buka pintu
                             menuju pengetahuan tanpa batas!</h3>
                     </div>
                 </div>
             </div>
-            <div class="lc-block"><a class="btn btn-outline-danger btn-lg" href="/register" role="button">Daftar Sekarang</a>
+            <div class="lc-block"><a class="btn btn-outline-primary btn-sm text-white"  style="background-color: #9055FD"" href="/register" role="button">Daftar Sekarang</a>
             </div>
         </div>
     </div>

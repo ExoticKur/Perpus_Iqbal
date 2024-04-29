@@ -1,9 +1,9 @@
 <x-auth.layout>
     <x-slot name="title">User ({{ $user->name }})</x-slot>
-    <div class="card">
+    <div class="card" style="background-color: white">
         <div class="card-header pb-0">
-            <h4 class="mb-0">Profile Details</h4>
-            <p>Informasi pengguna di perbarui sejak {{ $user->updated_at }}</p>
+            <h4 class="mb-0 text-black">Profile Details</h4>
+            <p class="text-black">Informasi pengguna di perbarui sejak {{ $user->updated_at }}</p>
         </div>
 
         <div class="card-body">
@@ -33,7 +33,7 @@
                                 name="telp"
                             value="{{ $user->telp }}" id="telp" disabled placeholder="Enter your telp"
                             autofocus />
-                        <label for="telp">Telp</label>
+                        <label for="telp">Telpon</label>
                     </div>
                 </div>
                 <div class="col-md">
@@ -84,8 +84,8 @@
         </div>
 
         <div class="card-body text-end">
-            <h4 class="mb-0">History</h4>
-            <p>informasi pengguna di perbarui sejak {{ $user->updated_at }}</p>
+            <h4 class="mb-0 text-black">History</h4>
+            <p class="text-black">informasi pengguna di perbarui sejak {{ $user->updated_at }}</p>
         </div>
 
     </div>

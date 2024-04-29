@@ -1,12 +1,12 @@
 <x-auth.layout>
-    <x-slot name="title">Confirmation Account</x-slot>
+    <x-slot name="title">Konfirmasi Akun</x-slot>
     @include('layouts.table')
     <div class="row mb-3 gy-3">
         <div class="col-md">
-            <div class="card">
+            <div class="card" style="background-color: white">
                 <div class="card-body">
-                    <div class="d-flex justify-content-between align-items-center mb-2">
-                        <p class="mb-0">Total {{ $verified->count() }} users</p>
+                    <div class="d-flex justify-content-between align-items-center mb-2 text-black">
+                        <p class="mb-0">Total {{ $verified->count() }} Pengguna</p>
                         <ul class="list-unstyled d-flex align-items-center avatar-group mb-0">
                             @forelse ($verified->take(5) as $item)
                                 <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top"
@@ -20,17 +20,17 @@
                     </div>
                     <div class="d-flex justify-content-between align-items-end">
                         <div class="role-heading">
-                            <h5 class="mb-1">Terkonfirmasi</h5>
+                            <h5 class="mb-1 text-black">Terkonfirmasi</h5>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="col-md">
-            <div class="card">
+            <div class="card" style="background-color: white">
                 <div class="card-body">
-                    <div class="d-flex justify-content-between align-items-center mb-2">
-                        <p class="mb-0">Total {{ $non_verified->count() }} users</p>
+                    <div class="d-flex justify-content-between align-items-center mb-2 text-black">
+                        <p class="mb-0">Total {{ $non_verified->count() }} Pengguna</p>
                         <ul class="list-unstyled d-flex align-items-center avatar-group mb-0">
                             @forelse ($non_verified->take(5) as $item)
                                 <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top"
@@ -44,7 +44,7 @@
                     </div>
                     <div class="d-flex justify-content-between align-items-end">
                         <div class="role-heading">
-                            <h5 class="mb-1">Menunggu Konfirmasi</h5>
+                            <h5 class="mb-1 text-black">Menunggu Konfirmasi</h5>
 
                         </div>
                     </div>
@@ -53,25 +53,25 @@
         </div>
     </div>
     <div class="card">
-        <div class="card-body">
+        <div class="card-body" style="background-color: white">
             <div class="table-responsive">
                 <table id="example" class="display table nowrap" style="width:100%">
                     <thead>
                         <tr>
-                            <th>No.</th>
-                            <th>nama lengkap</th>
-                            <th>NIS/etc.</th>
-                            <th>role</th>
-                            <th>Action</th>
+                            <th class="text-black">No.</th>
+                            <th class="text-black">nama lengkap</th>
+                            <th class="text-black">NIS/etc.</th>
+                            <th class="text-black">Aktor</th>
+                            <th class="text-black">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach ($users as $no => $user)
                             <tr>
-                                <td>{{ ++$no }}.</td>
-                                <td>{{ $user->name }}</td>
-                                <td>{{ $user->identify }}</td>
-                                <td>{{ $user->role }}</td>
+                                <td class="text-black">{{ ++$no }}.</td>
+                                <td class="text-black">{{ $user->name }}</td>
+                                <td class="text-black">{{ $user->identify }}</td>
+                                <td class="text-black">{{ $user->role }}</td>
                                 <td>
                                     <div class="d-flex gap-3 justify-content-center">
                                         @include('confirmation.show')

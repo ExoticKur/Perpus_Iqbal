@@ -1,14 +1,14 @@
 <x-guest.layout>
     <x-slot name="title">History Catalog Book</x-slot>
     @include('layouts.table')
-    <div class="card m-5 p-4 mt-1 shadow-none">
-        <h5 class="mb-0">Riwayat Peminjaman Buku</h5>
-        <p class="mb-3">Berikut data riwayat dari peminjaman buku {{ auth()->user()->name }}</p>
-        <div class="card-header">
-            <div class="nav-align-top">
-                <ul class="nav nav-tabs nav-fill" role="tablist">
-                    <li class="nav-item">
-                        <button type="button" class="nav-link active" role="tab" data-bs-toggle="tab"
+    <div class="card m-5 p-4 mt-1 shadow-none text-black"  style="background-color: white">
+        <h5 class="mb-0 text-black">Riwayat Peminjaman Buku</h5>
+        <p class="mb-3 text-black">Berikut data riwayat dari peminjaman buku {{ auth()->user()->name }}</p>
+        <div class="card-header text-black" style="color: black !important;">
+            <div class="nav-align-top" style="color: black !important;">
+                <ul class="nav nav-tabs nav-fill text-black" role="tablist">
+                    <li class="nav-item text-black">
+                        <button type="button" class="nav-link active text-black" role="tab" data-bs-toggle="tab"
                             data-bs-target="#navs-justified-waiting" aria-controls="navs-justified-waiting"
                             aria-selected="true"><i
                                 class="tf-icons mdi mdi-receipt-text-clock-outline mdi-20px me-1"></i> Menunggu
@@ -19,7 +19,7 @@
                         </button>
                     </li>
                     <li class="nav-item">
-                        <button type="button" class="nav-link" role="tab" data-bs-toggle="tab"
+                        <button type="button" class="nav-link text-black" role="tab" data-bs-toggle="tab"
                             data-bs-target="#navs-justified-walking" aria-controls="navs-justified-walking"
                             aria-selected="false"><i class="tf-icons mdi mdi-timer-sand-complete mdi-20px me-1"></i>
                             Berjalan
@@ -30,7 +30,7 @@
                         </button>
                     </li>
                     <li class="nav-item">
-                        <button type="button" class="nav-link" role="tab" data-bs-toggle="tab"
+                        <button type="button" class="nav-link text-black" role="tab" data-bs-toggle="tab"
                             data-bs-target="#navs-justified-penalty" aria-controls="navs-justified-penalty"
                             aria-selected="false"><i class="tf-icons mdi mdi-alert-box-outline mdi-20px me-1"></i>
                             Hukuman
@@ -41,7 +41,7 @@
                         </button>
                     </li>
                     <li class="nav-item">
-                        <button type="button" class="nav-link" role="tab" data-bs-toggle="tab"
+                        <button type="button" class="nav-link text-black" role="tab" data-bs-toggle="tab"
                             data-bs-target="#navs-justified-finished" aria-controls="navs-justified-finished"
                             aria-selected="false"><i class="tf-icons mdi mdi-tag-check mdi-20px me-1"></i>
                             Selesai
@@ -52,7 +52,7 @@
                         </button>
                     </li>
                     <li class="nav-item">
-                        <button type="button" class="nav-link" role="tab" data-bs-toggle="tab"
+                        <button type="button" class="nav-link text-black" role="tab" data-bs-toggle="tab"
                             data-bs-target="#navs-justified-rejects" aria-controls="navs-justified-rejects"
                             aria-selected="false"><i class="tf-icons mdi mdi-tag-check mdi-20px me-1"></i>
                             Tolak
@@ -72,21 +72,21 @@
                         <table id="example" class="display table nowrap text-center" style="width:100%">
                             <thead>
                                 <tr>
-                                    <th>No.</th>
-                                    <th>status</th>
-                                    <th>Tanggal Pinjam</th>
-                                    <th>Tanggal Kembali</th>
-                                    <th>Buku</th>
+                                    <th class="text-black">No.</th>
+                                    <th class="text-black">status</th>
+                                    <th class="text-black">Tanggal Pinjam</th>
+                                    <th class="text-black">Tanggal Kembali</th>
+                                    <th class="text-black">Buku</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach ($waiting as $no => $wait)
                                     <tr>
-                                        <td>{{ ++$no }}.</td>
-                                        <td><span class="badge bg-warning">{{ $wait->status }}</span></td>
-                                        <td>{{ $wait->borrow_date ?? '-' }}</td>
-                                        <td>{{ $wait->return_date ?? '-' }}</td>
-                                        <td>{{ $wait->book->title }}</td>
+                                        <td class="text-black">{{ ++$no }}.</td>
+                                        <td class="text-black"><span class="badge bg-warning">{{ $wait->status }}</span></td>
+                                        <td class="text-black">{{ $wait->borrow_date ?? '-' }}</td>
+                                        <td class="text-black">{{ $wait->return_date ?? '-' }}</td>
+                                        <td class="text-black">{{ $wait->book->title }}</td>
                                     </tr>
                                 @endforeach
                             </tbody>
@@ -98,21 +98,21 @@
                         <table id="example" class="display table nowrap text-center" style="width:100%">
                             <thead>
                                 <tr>
-                                    <th>No.</th>
-                                    <th>status</th>
-                                    <th>Tanggal Pinjam</th>
-                                    <th>Tanggal Kembali</th>
-                                    <th>Buku</th>
+                                    <th class="text-black">No.</th>
+                                    <th class="text-black">status</th>
+                                    <th class="text-black">Tanggal Pinjam</th>
+                                    <th class="text-black">Tanggal Kembali</th>
+                                    <th class="text-black">Buku</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach ($walking as $no => $walk)
                                     <tr>
-                                        <td>{{ ++$no }}.</td>
-                                        <td><span class="badge bg-primary">{{ $walk->status }}</span></td>
-                                        <td>{{ $walk->borrow_date ?? '-' }}</td>
-                                        <td>{{ $walk->return_date ?? '-' }}</td>
-                                        <td>{{ $walk->book->title }}</td>
+                                        <td class="text-black">{{ ++$no }}.</td>
+                                        <td class="text-black"><span class="badge bg-primary">{{ $walk->status }}</span></td>
+                                        <td class="text-black">{{ $walk->borrow_date ?? '-' }}</td>
+                                        <td class="text-black">{{ $walk->return_date ?? '-' }}</td>
+                                        <td class="text-black">{{ $walk->book->title }}</td>
                                     </tr>
                                 @endforeach
                             </tbody>

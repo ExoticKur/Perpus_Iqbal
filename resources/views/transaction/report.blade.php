@@ -1,8 +1,8 @@
 <x-auth.layout>
     <x-slot name="title">Transaction Library Report</x-slot>
     @include('layouts.report')
-    <div class="card">
-        <div class="card-body table-responsive">
+    <div class="card" style="background-color: white">
+        <div class="card-body table-responsive text-black">
             <table id="example" class="display" style="width:100%">
                 <thead>
                     <tr>

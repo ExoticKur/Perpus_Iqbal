@@ -1,40 +1,40 @@
 <div class="modal fade" id="show-{{ $user->slug }}" aria-hidden="true" aria-labelledby="show-{{ $user->slug }}Label"
     tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
+        <div class="modal-content" style="background-color: #004953">
             <div class="modal-header">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body text-start">
-                <h5 class="mb-0">Informasi Pengguna</h5>
-                <p>Pengguna terdaftar sejak {{ $user->created_at }}</p>
+                <h5 class="mb-0 text-white">Informasi Pengguna</h5>
+                <p class="text-white">Pengguna terdaftar sejak {{ $user->created_at }}</p>
                 <div class="row">
                     <div class="col-md">
                         <ul class="list-unstyled">
-                            <li>
+                            <li class="text-white">
                                 <span class="fw-bold">Nama lengkap: </span> {{ $user->name }}
                             </li>
-                            <li>
+                            <li class="text-white">
                                 <span class="fw-bold">NIS/Etc.: </span> {{ $user->identify }}
                             </li>
-                            <li>
-                                <span class="fw-bold">Role: </span> {{ $user->role }}
+                            <li class="text-white">
+                                <span class="fw-bold">Aktor: </span> {{ $user->role }}
                             </li>
-                            <li>
-                                <span class="fw-bold">Role: </span>
+                            <li class="text-white">
+                                <span class="fw-bold">Aktor: </span>
                                 {{ Carbon\Carbon::parse($user->birthdate)->format('d, M Y') }}
                             </li>
                         </ul>
                     </div>
                     <div class="col-md">
                         <ul class="list-unstyled">
-                            <li>
+                            <li class="text-white">
                                 <span class="fw-bold">Email: </span> {{ $user->email }}
                             </li>
-                            <li>
-                                <span class="fw-bold">Telp: </span> {{ $user->telp }}
+                            <li class="text-white">
+                                <span class="fw-bold">Telpon: </span> {{ $user->telp }}
                             </li>
-                            <li>
+                            <li class="text-white">
                                 <span class="fw-bold">Jenis Kelamin: </span> {{ $user->gender }}
                             </li>
                         </ul>

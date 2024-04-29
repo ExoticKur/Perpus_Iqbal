@@ -8,7 +8,7 @@
 <div class="modal fade" id="{{ $user->slug }}" tabindex="-1" role="dialog" aria-labelledby="modalTitleId"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl text-start" role="document">
-        <div class="modal-content">
+        <div class="modal-content" style="background-color: #004953">
             <div class="modal-header">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
@@ -21,11 +21,11 @@
                     <p>Kosongkan saja password jika tidak menggubah password</p>
                     <div class="row">
                         <div class="col-md">
-                            <div class="form-floating form-floating-outline mb-3">
-                                <input type="text" class="form-control @error('name') is-invalid @enderror"
+                            <div class="mb-3">
+                                <label for="name" class="text-white">Nama Lengkap</label>
+                                <input type="text" class="form-control text-black @error('name') is-invalid @enderror" style="background-color: white"
                                     name="name" value="{{ $user->name }}" id="name"
                                     placeholder="Enter your name" />
-                                <label for="name">Nama Lengkap</label>
                                 @error('name')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -34,10 +34,10 @@
                             </div>
                         </div>
                         <div class="col-md">
-                            <div class="form-floating form-floating-outline mb-3">
-                                <input type="text" class="form-control @error('email') is-invalid @enderror"
+                            <div class="mb-3">
+                                <label for="email" class="text-white">Email</label>
+                                <input type="text" class="form-control text-white @error('email') is-invalid @enderror" style="background-color: white"
                                     name="email" value="{{ $user->email }}" placeholder="Enter your email" />
-                                <label for="email">Email</label>
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -48,11 +48,11 @@
                     </div>
                     <div class="row">
                         <div class="col-md">
-                            <div class="form-floating form-floating-outline mb-3">
-                                <input type="number" class="form-control @error('telp') is-invalid @enderror"
+                            <div class="mb-3">
+                                <label for="telp" class="text-white">Telpon</label>
+                                <input type="number" class="form-control text-black @error('telp') is-invalid @enderror" style="background-color: white"
                                     name="telp" value="{{ $user->telp }}" id="telp"
                                     placeholder="Enter your telp" />
-                                <label for="telp">Telp</label>
                                 @error('telp')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -61,11 +61,11 @@
                             </div>
                         </div>
                         <div class="col-md">
-                            <div class="form-floating form-floating-outline mb-3">
-                                <input type="number" class="form-control @error('identify') is-invalid @enderror"
+                            <div class="mb-3">
+                                <label for="identify" class="text-white">NIS/etc.</label>
+                                <input type="number" class="form-control text-black @error('identify') is-invalid @enderror" style="background-color: white"
                                     name="identify" value="{{ $user->identify }}" id="identify"
                                     placeholder="Enter your identify" />
-                                <label for="identify">NIS/etc.</label>
                                 @error('identify')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -77,10 +77,10 @@
                     </div>
                     <div class="row">
                         <div class="col-md">
-                            <div class="form-floating form-floating-outline mb-3">
-                                <input type="password" class="form-control @error('password') is-invalid @enderror"
+                            <div class="mb-3">
+                                <label for="password" class="text-white">Password</label>
+                                <input type="password" class="form-control text-black @error('password') is-invalid @enderror" style="background-color: white"
                                     name="password" id="password" placeholder="Enter your password" />
-                                <label for="password">Password</label>
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -89,11 +89,11 @@
                             </div>
                         </div>
                         <div class="col-md">
-                            <div class="form-floating form-floating-outline mb-3">
-                                <input type="date" class="form-control @error('birthdate') is-invalid @enderror"
+                            <div class="mb-3">
+                                <label for="birthdate" class="text-white">Tanggal Lahir</label>
+                                <input type="date" class="form-control text-black @error('birthdate') is-invalid @enderror" style="background-color: white"
                                     name="birthdate" value="{{ $user->birthdate }}" id="birthdate"
                                     placeholder="Enter your birthdate" />
-                                <label for="birthdate">Tanggal Lahir</label>
                                 @error('birthdate')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -104,8 +104,9 @@
                     </div>
                     <div class="row">
                         <div class="col-md">
-                            <div class="form-floating form-floating-outline mb-3">
-                                <select class="form-select form-control @error('gender') is-invalid @enderror"
+                            <div class="mb-3">
+                                <label for="gender" class="text-white">Jenis Kelamin</label>
+                                <select class="form-select form-control text-black @error('gender') is-invalid @enderror" style="background-color: white"
                                     name="gender" id="gender">
                                     <option selected disabled>Pilih satu</option>
                                     <option {{ $user->gender == 'Laki-laki' ? 'selected' : '' }} value="Laki-laki">
@@ -113,7 +114,6 @@
                                     <option {{ $user->gender == 'Perempuan' ? 'selected' : '' }} value="Perempuan">
                                         Perempuan</option>
                                 </select>
-                                <label for="gender">Jenis Kelamin</label>
                                 @error('gender')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -122,8 +122,9 @@
                             </div>
                         </div>
                         <div class="col-md">
-                            <div class="form-floating form-floating-outline mb-3">
-                                <select class="form-select form-control @error('role') is-invalid @enderror"
+                            <div class="mb-3">
+                                <label for="role" class="text-white">Status</label>
+                                <select class="form-select form-control text-black @error('role') is-invalid @enderror" style="background-color: white"
                                     name="role" id="role">
                                     <option selected disabled>Pilih satu</option>
                                     <option {{ $user->role == 'Anggota' ? 'selected' : '' }} value="Anggota">Anggota
@@ -131,7 +132,6 @@
                                     <option {{ $user->role == 'Petugas' ? 'selected' : '' }} value="Petugas">Petugas
                                     </option>
                                 </select>
-                                <label for="role">Status</label>
                                 @error('role')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -142,8 +142,8 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Save</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kembali</button>
+                    <button type="submit" class="btn btn-primary">Simpan</button>
                 </div>
             </form>
         </div>

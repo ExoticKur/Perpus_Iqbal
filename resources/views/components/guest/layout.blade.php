@@ -64,7 +64,7 @@
                 </button>
             </div>
         @elseif ($errors->any())
-            <div class="alert alert-danger alert-dismissible mb-3" role="alert">
+            <div class="alert alert-danger alert-dismissible mb-3" role="alert"  style="background-color: white">
                 <h4 class="alert-heading d-flex align-items-center"><i
                         class="mdi mdi-close-circle mdi-24px me-2"></i>Opps :(</h4>
 
@@ -76,7 +76,7 @@
                 </button>
             </div>
         @elseif (session('warning'))
-            <div class="alert alert-danger alert-dismissible mb-3" role="alert">
+            <div class="alert alert-danger alert-dismissible mb-3" role="alert"  style="background-color: white">
                 <h4 class="alert-heading d-flex align-items-center"><i
                         class="mdi mdi-close-circle mdi-24px me-2"></i>Opps :(</h4>
                 <hr>
@@ -93,14 +93,14 @@
             <div class="lc-block d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
                 <div class="col-md-4">
                     <div editable="rich">
-                        <p class="text-muted"> © 2024 Akar</p>
+                        <p class="text-white"> © 2024 AKAR</p>
                     </div>
                 </div><!-- /lc-block -->
                 <div class="d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto col-md-4">
                     <div class="lc-block text-center">
                         <a class="navbar-brand" href="/">
                             <img class="img-fluid me-1"
-                                src="https://themeselection.com/wp-content/uploads/2022/04/hero-Illustration-1-768x710.png"
+                                src="\assets\img\favicon\PR.png"
                                 alt="my brand" width="48px" height="48px">
                         </a>
                     </div>
@@ -109,12 +109,11 @@
                     <div lc-helper="shortcode" class="live-shortcode"> <!--  lc_nav_menu -->
                         <ul id="menu-menu-1" class="navbar-nav me-auto mb-2 mb-md-0 flex-wrap justify-content-end">
                             <li class="menu-item menu-item-type-custom menu-item-object-custom nav-item nav-item-32739">
-                                <a href="/" class="nav-link ">BS5 Page
-                                    Templates</a>
+                                <a href="/" class="nav-link "></a>
                             </li>
                             <li
                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home nav-item nav-item-32738">
-                                <a href="/" class="nav-link ">BS5 Snippets</a>
+                                <a href="/" class="nav-link "></a>
                             </li>
                         </ul> <!-- /lc_nav_menu -->
                     </div>

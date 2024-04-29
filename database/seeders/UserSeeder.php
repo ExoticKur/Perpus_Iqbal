@@ -24,7 +24,7 @@ class UserSeeder extends Seeder
                 'role' => 'Anggota',
                 'birthdate' => '2001-07-22',
                 'gender' => 'Laki-laki',
-                'identify' => '1234567891',
+                'identify' => '12345php67891',
                 'email_verified_at' => now(),
             ],
             [
